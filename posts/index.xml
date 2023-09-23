@@ -21,5 +21,36 @@
       <description></description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://ydteng.github.io/posts/intellij-idea%E6%96%B0%E5%BB%BAspringboot%E9%A1%B9%E7%9B%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ydteng.github.io/posts/intellij-idea%E6%96%B0%E5%BB%BAspringboot%E9%A1%B9%E7%9B%AE/</guid>
+      <description>IntelliJ IDEA新建SpringBoot项目 前言 虽然新建项目比较简单，但还是有几个点需要注意。
+步骤 下载和安装IDEA不再介绍
+新建工程
+点击“New Project” 标红的为重点关注
+需要关注的几个字段：
+Name：项目/模块名
+Artifact：相当于具体的功能名
+Group：可以理解为分组，例如属于那个项目组
+Package Name：包名，可以长点，也可以短点，例如：com.example.demo或者com.example
+注意java8要选择springboot版本要低于3，依赖自己按需选择，这里只选择了spring web 刚创建完工程后，IDEA还未识别出maven工程，需要等待其初始化完成（初始化可能会遇到网络问题，可自行换源） 初始化完成后，对比右侧栏，如何迟迟没有变化，可能是maven的配置问题。 有的可能没有绿色的高亮，这是IDEA的git自动检测，不用在意。 开始学习或者开发
+结语 注意几个要点即可，特别是maven项目加载问题、java和springboot版本的对应问题。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ydteng.github.io/posts/springboot%E5%85%A8%E5%B1%80%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE%E9%99%84%E5%B8%A6http%E7%8A%B6%E6%80%81%E7%A0%81/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ydteng.github.io/posts/springboot%E5%85%A8%E5%B1%80%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE%E9%99%84%E5%B8%A6http%E7%8A%B6%E6%80%81%E7%A0%81/</guid>
+      <description>SpringBoot全局异常处理，返回数据附带http状态码，以及捕获404页面异常 前言 全局异常处理对于编写网络接口程序来说至关重要，能省掉很多的判断语句，让逻辑更加清晰。springboot中的全局异常处理并不难。与网上大部分文章不同的是，我用springboot自带的ResponseEntity给返回结果加上了了http状态码。当然有些人的接口可能全部返回200状态也是可以，但是为了以后的兼容性，还是加上状态码比较好。
+代码部分 定义一个枚举类 枚举类的作用：预先定义好一些常用的状态信息，便于集中状态信息的集中管理
+当然这个类也可以不加，但是当编写大项目的时候会变得乱七八糟。
+package com.test.exception; public enum ExceptionEnum{ //下面是一些预先定义的状态信息 SUCCESS(200, true, &amp;#34;成功！&amp;#34;), SIGNATURE_NOT_MATCH(403,false,&amp;#34;服务器拒绝！&amp;#34;), NOT_FOUND(404, false,&amp;#34;未找到该资源!&amp;#34;), URL_NOT_FOUND(404, false,&amp;#34;URL不存在！&amp;#34;), INTERNAL_SERVER_ERROR(500, false,&amp;#34;服务器内部错误！&amp;#34;); private final Integer resultCode; private final Boolean resultStatus; private final String resultMsg; //构造函数 ExceptionEnum(Integer resultCode, Boolean resultStatus, String resultMsg) { this.resultCode = resultCode; this.resultStatus = resultStatus; this.resultMsg = resultMsg; } public Integer getResultCode() { return resultCode; } public Boolean getResultStatus() { return resultStatus; } public String getResultMsg() { return resultMsg; } } 统一信息返回格式 统一返回信息json格式为：</description>
+    </item>
+    
   </channel>
 </rss>
