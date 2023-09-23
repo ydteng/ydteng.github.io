@@ -31,9 +31,9 @@
     </item>
     
     <item>
-      <title></title>
+      <title>First</title>
       <link>https://ydteng.github.io/posts/intellij-idea%E6%96%B0%E5%BB%BAspringboot%E9%A1%B9%E7%9B%AE/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 23 Sep 2023 10:57:03 +0800</pubDate>
       
       <guid>https://ydteng.github.io/posts/intellij-idea%E6%96%B0%E5%BB%BAspringboot%E9%A1%B9%E7%9B%AE/</guid>
       <description>IntelliJ IDEA新建SpringBoot项目 前言 虽然新建项目比较简单，但还是有几个点需要注意。
@@ -50,9 +50,9 @@ Package Name：包名，可以长点，也可以短点，例如：com.example.de
     </item>
     
     <item>
-      <title></title>
+      <title>First</title>
       <link>https://ydteng.github.io/posts/springboot%E5%85%A8%E5%B1%80%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE%E9%99%84%E5%B8%A6http%E7%8A%B6%E6%80%81%E7%A0%81/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 23 Sep 2023 10:57:03 +0800</pubDate>
       
       <guid>https://ydteng.github.io/posts/springboot%E5%85%A8%E5%B1%80%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE%E9%99%84%E5%B8%A6http%E7%8A%B6%E6%80%81%E7%A0%81/</guid>
       <description>SpringBoot全局异常处理，返回数据附带http状态码，以及捕获404页面异常 前言 全局异常处理对于编写网络接口程序来说至关重要，能省掉很多的判断语句，让逻辑更加清晰。springboot中的全局异常处理并不难。与网上大部分文章不同的是，我用springboot自带的ResponseEntity给返回结果加上了了http状态码。当然有些人的接口可能全部返回200状态也是可以，但是为了以后的兼容性，还是加上状态码比较好。
