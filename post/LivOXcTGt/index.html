@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>IntelliJ IDEA新建SpringBoot项目 | 绿树荫下跑猫猫</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://ydteng.github.io/favicon.ico?v=1706104822260">
+<link rel="stylesheet" href="https://ydteng.github.io/styles/main.css">
+
+
+  
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css" />
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="IntelliJ IDEA新建SpringBoot项目
+前言
+虽然新建项目比较简单，但还是有几个点需要注意。
+步骤
+
+
+下载和安装IDEA不再介绍
+
+
+新建工程
+
+点击“New Project”
+
+
+
+
+标红的为重点关注
+
+
+需要关注的几个..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://ydteng.github.io">
+        <img src="https://ydteng.github.io/images/avatar.png?v=1706104822260" class="site-logo">
+        <h1 class="site-title">绿树荫下跑猫猫</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/ydteng" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      一个没头脑，但很快乐的净化器
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://ydteng.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">IntelliJ IDEA新建SpringBoot项目</h2>
+            <div class="post-date">2022-05-11</div>
+            
+            <div class="post-content" v-pre>
+              <h1 id="intellij-idea新建springboot项目">IntelliJ IDEA新建SpringBoot项目</h1>
+<h2 id="前言">前言</h2>
+<p>虽然新建项目比较简单，但还是有几个点需要注意。</p>
+<h2 id="步骤">步骤</h2>
+<ol>
+<li>
+<p>下载和安装IDEA不再介绍</p>
+</li>
+<li>
+<p>新建工程</p>
+<ul>
+<li>点击“New Project”</li>
+</ul>
+<figure data-type="image" tabindex="1"><img src="https://file.ydteng.top/images/202309082129151.png" alt="QQ截图20230908101811" loading="lazy"></figure>
+<ul>
+<li>
+<p>标红的为重点关注</p>
+</li>
+<li>
+<p>需要关注的几个字段：</p>
+<ul>
+<li>
+<p>Name：项目/模块名</p>
+</li>
+<li>
+<p>Artifact：相当于具体的功能名</p>
+</li>
+<li>
+<p>Group：可以理解为分组，例如属于那个项目组</p>
+</li>
+<li>
+<p>Package Name：包名，可以长点，也可以短点，例如：com.example.demo或者com.example</p>
+</li>
+</ul>
+</li>
+</ul>
+<figure data-type="image" tabindex="2"><img src="https://file.ydteng.top/images/202309082157547.png" alt="image-20230908213052812" loading="lazy"></figure>
+<ul>
+<li>注意java8要选择springboot版本要低于3，依赖自己按需选择，这里只选择了spring web</li>
+</ul>
+<figure data-type="image" tabindex="3"><img src="https://file.ydteng.top/images/202309082134564.png" alt="image-20230908213405502" loading="lazy"></figure>
+<ul>
+<li>刚创建完工程后，IDEA还未识别出maven工程，需要等待其初始化完成（初始化可能会遇到网络问题，可自行换源）</li>
+</ul>
+<figure data-type="image" tabindex="4"><img src="https://file.ydteng.top/images/202309082142647.png" alt="image-20230908214228899" loading="lazy"></figure>
+<ul>
+<li>初始化完成后，对比右侧栏，如何迟迟没有变化，可能是maven的配置问题。</li>
+<li>有的可能没有绿色的高亮，这是IDEA的git自动检测，不用在意。</li>
+</ul>
+<figure data-type="image" tabindex="5"><img src="https://file.ydteng.top/images/202309082153493.png" alt="image-20230908215043126" loading="lazy"></figure>
+</li>
+<li>
+<p>开始学习或者开发</p>
+</li>
+</ol>
+<h2 id="结语">结语</h2>
+<p>注意几个要点即可，特别是maven项目加载问题、java和springboot版本的对应问题。</p>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://ydteng.github.io/post/hello-gridea/">
+                  <h3 class="post-title">
+                    Hello Blog
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+
+              
+                <div id="disqus_thread" data-aos="fade-in"></div>
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
+
+
+
+
+  
+
+  
+    <script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
+    <script>
+
+    var options = {
+      shortname: 'ydteng-blog',
+      apikey: 'qNGhJVBWccIoFmnPIm0lJjWWwzz3QZyXLCsav5xY4vhFJzVeCelK5sq2dxlJdUNx',
+    }
+    if ('') {
+      options.api = ''
+    }
+    var dsqjs = new DisqusJS(options)
+
+    </script>
+  
+
+
+
+
+  </body>
+</html>

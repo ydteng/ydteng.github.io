@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://ydteng.github.io</id>
+    <title>绿树荫下跑猫猫</title>
+    <updated>2024-01-24T14:00:24.247Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://ydteng.github.io"/>
+    <link rel="self" href="https://ydteng.github.io/atom.xml"/>
+    <subtitle>一个没头脑，但很快乐的净化器</subtitle>
+    <logo>https://ydteng.github.io/images/avatar.png</logo>
+    <icon>https://ydteng.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2024, 绿树荫下跑猫猫</rights>
+    <entry>
+        <title type="html"><![CDATA[IntelliJ IDEA新建SpringBoot项目]]></title>
+        <id>https://ydteng.github.io/post/LivOXcTGt/</id>
+        <link href="https://ydteng.github.io/post/LivOXcTGt/">
+        </link>
+        <updated>2022-05-11T12:37:36.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="intellij-idea新建springboot项目">IntelliJ IDEA新建SpringBoot项目</h1>
+<h2 id="前言">前言</h2>
+<p>虽然新建项目比较简单，但还是有几个点需要注意。</p>
+<h2 id="步骤">步骤</h2>
+<ol>
+<li>
+<p>下载和安装IDEA不再介绍</p>
+</li>
+<li>
+<p>新建工程</p>
+<ul>
+<li>点击“New Project”</li>
+</ul>
+<figure data-type="image" tabindex="1"><img src="https://file.ydteng.top/images/202309082129151.png" alt="QQ截图20230908101811" loading="lazy"></figure>
+<ul>
+<li>
+<p>标红的为重点关注</p>
+</li>
+<li>
+<p>需要关注的几个字段：</p>
+<ul>
+<li>
+<p>Name：项目/模块名</p>
+</li>
+<li>
+<p>Artifact：相当于具体的功能名</p>
+</li>
+<li>
+<p>Group：可以理解为分组，例如属于那个项目组</p>
+</li>
+<li>
+<p>Package Name：包名，可以长点，也可以短点，例如：com.example.demo或者com.example</p>
+</li>
+</ul>
+</li>
+</ul>
+<figure data-type="image" tabindex="2"><img src="https://file.ydteng.top/images/202309082157547.png" alt="image-20230908213052812" loading="lazy"></figure>
+<ul>
+<li>注意java8要选择springboot版本要低于3，依赖自己按需选择，这里只选择了spring web</li>
+</ul>
+<figure data-type="image" tabindex="3"><img src="https://file.ydteng.top/images/202309082134564.png" alt="image-20230908213405502" loading="lazy"></figure>
+<ul>
+<li>刚创建完工程后，IDEA还未识别出maven工程，需要等待其初始化完成（初始化可能会遇到网络问题，可自行换源）</li>
+</ul>
+<figure data-type="image" tabindex="4"><img src="https://file.ydteng.top/images/202309082142647.png" alt="image-20230908214228899" loading="lazy"></figure>
+<ul>
+<li>初始化完成后，对比右侧栏，如何迟迟没有变化，可能是maven的配置问题。</li>
+<li>有的可能没有绿色的高亮，这是IDEA的git自动检测，不用在意。</li>
+</ul>
+<figure data-type="image" tabindex="5"><img src="https://file.ydteng.top/images/202309082153493.png" alt="image-20230908215043126" loading="lazy"></figure>
+</li>
+<li>
+<p>开始学习或者开发</p>
+</li>
+</ol>
+<h2 id="结语">结语</h2>
+<p>注意几个要点即可，特别是maven项目加载问题、java和springboot版本的对应问题。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello Blog]]></title>
+        <id>https://ydteng.github.io/post/hello-gridea/</id>
+        <link href="https://ydteng.github.io/post/hello-gridea/">
+        </link>
+        <updated>2018-12-11T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>👏  欢迎访问我的<strong>博客</strong> ！<br>
+✍️  我将使用它来来记录我的生活、心情、知识、笔记、创意... ...</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>👏  欢迎访问我的<strong>博客</strong> ！<br>
+✍️  我将使用它来来记录我的生活、心情、知识、笔记、创意... ...</p>
+<!-- more -->
+<p>🎀 感谢浏览！</p>
+]]></content>
+    </entry>
+</feed>
